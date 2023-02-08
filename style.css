@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2,200px);
+}
+
+.color {
+  height: 200px;
+  width: 200px;
+  transition: all 2s ease-in;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.idontknow {
+  background-color: #b38383;
+}
+
+.container:hover .blue {
+  transform: translateX(-200px) rotate(90deg);
+}
+
+.container:hover .yellow {
+  transform: translateX(-200px) rotate(-90deg);
+}
+
+.container:hover .gray {
+  transform: translateX(200px) rotate(-90deg);
+}
+
+.container:hover .idontknow {
+  transform: translateX(200px) rotate(90deg);
+}
+
+
