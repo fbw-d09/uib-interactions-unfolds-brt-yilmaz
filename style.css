@@ -23,6 +23,8 @@ main {
 .container {
   width: 400px;
   height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2,200px);
 }
 
 .color {
@@ -33,30 +35,18 @@ main {
 
 .blue {
   background-color: blue;
-  position: absolute;
-  top: calc(50% - 200px);
-  left: calc(50% - 200px);
 }
 
 .yellow {
   background-color: yellow;
-  position: absolute;
-  top: calc(50%);
-  left: calc(50% - 200px);
 }
 
 .gray {
   background-color: gray;
-  position: absolute;
-  top: calc(50% - 200px);
-  left: calc(50%);
 }
 
 .idontknow {
   background-color: #b38383;
-  position: absolute;
-  top: calc(50%);
-  left: calc(50%);
 }
 
 .container:hover .blue {
@@ -74,4 +64,5 @@ main {
 .container:hover .idontknow {
   transform: translateX(200px) rotate(90deg);
 }
+
 
